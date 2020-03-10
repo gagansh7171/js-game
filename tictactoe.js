@@ -33,5 +33,31 @@ $(document).ready(function(){
         
     });
 
+});
 
-  });
+
+player=""
+function choicex(){
+    player="X" ;
+    alert(player);
+}
+function choiceo(){
+    player="O";
+    alert(player);
+}
+
+toss= Math.random()%2;
+
+function computer(){
+
+}
+
+function man(){
+
+}
+
+var over = 1 ;
+var manwin = 0; //man lose
+while(over){
+
+}
