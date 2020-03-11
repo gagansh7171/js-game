@@ -4,22 +4,22 @@
         <title>
             Tic Tac Toe
         </title>
-        <!--link rel="stylesheet" href="bootstrap.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css">
         <script src="jqeury.js"></script>
-       <script src="bootstrap.js"></script-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <script src="bootstrap.js"></script>
+        
 
     <link rel="stylesheet" href="tictactoe.css">
 
-    <script src="tictactoe.js">
-        </script>
+    <script src="tictactoe.js" >
+    </script>
     </head>
 
     <body>
         <div id="choice">
-            <span id="close">X</span>
+           
             <center><h1>What is your choice?</h1>
             <div class="row" style="margin-top:10%">
                 <div class="col-md-6"><span id="x" onclick="choicex()">X</span></div>
@@ -30,26 +30,22 @@
            
         </div>
         <center>
+        <div id ="result"></div>
         <div class="row game">
-            <div class="col-md-4"><img src="computer.png"></div>
+            <div class="col-md-4"><img src="computer.png"><div id="think"></div></div>
             <div class="col-md-4">
-                <table >
-                    <tr>
-                        <td width="33%"></td>
-                        <td width="33%"></td>
-                        <TD width="33%"></TD>
-                    </tr>
-                    <tr>
-                        <td width="33%"></td >
-                        <td width="33%"></td>
-                        <TD width="33%"></TD>
-                    </tr>
-                    <tr>
-                        <td width="33%"></td>
-                        <td width="33%"></td>
-                        <TD width="33%"></TD>
-                    </tr>
-                </table>
+                <div class="grid-container">
+                    <div class="item" onclick="man(0)"></div>
+                    <div class="item" onclick="man(1)"></div>
+                    <div class="item" onclick="man(2)"></div>  
+                    <div class="item" onclick="man(3)"></div>
+                    <div class="item" onclick="man(4)"></div>
+                    <div class="item" onclick="man(5)"></div>
+                    <div class="item" onclick="man(6)"></div>
+                    <div class="item" onclick="man(7)"></div>
+                    <div class="item" onclick="man(8)"></div>  
+                  </div>
+                <br><div id="replay" onclick="replay()">REPLAY</div>
             </div>
             <div class="col-md-4"><img src="man.png" ></div>
             
